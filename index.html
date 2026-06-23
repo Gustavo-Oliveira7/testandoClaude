@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finesse Abrantes — Taças de Cristal Premium</title>
+  <meta name="description" content="Finesse Abrantes — taças de cristal premium feitas à mão. Sofisticação, brilho e perfeição em cada detalhe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- ===== Loader ===== -->
+  <div class="loader" id="loader">
+    <div class="loader__mark">
+      <span class="loader__letter">F</span>
+      <span class="loader__letter">A</span>
+    </div>
+    <div class="loader__line"></div>
+  </div>
+
+  <!-- ===== Header ===== -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a href="#hero" class="brand" aria-label="Finesse Abrantes">
+        <span class="brand__name">Finesse Abrantes</span>
+        <span class="brand__tag">Crystal Atelier</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#collections" class="nav__link">Coleções</a>
+        <a href="#heritage" class="nav__link">Atelier</a>
+        <a href="#craft" class="nav__link">Artesania</a>
+        <a href="#gallery" class="nav__link">Galeria</a>
+        <a href="#contact" class="nav__link">Contato</a>
+        <a href="https://instagram.com/finesseabrantes" target="_blank" rel="noopener" class="nav__cta">Instagram</a>
+      </nav>
+      <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <div class="hero__glow"></div>
+    <div class="hero__content">
+      <p class="eyebrow eyebrow--center">Cristal premium · Edição de autor</p>
+      <h1 class="hero__title">
+        A arte de<br /><em>elevar o brilho</em>
+      </h1>
+      <p class="hero__lead">
+        Taças de cristal sopradas à mão, onde cada curva é desenhada para
+        revelar a alma do vinho. Sofisticação que se sente no toque.
+      </p>
+      <div class="hero__actions">
+        <a href="#collections" class="btn btn--gold">Explorar coleções</a>
+        <a href="#heritage" class="btn btn--ghost">Nossa história</a>
+      </div>
+    </div>
+    <div class="hero__glass" aria-hidden="true">
+      <!-- SVG crystal glass -->
+      <svg viewBox="0 0 220 480" class="glass-svg" preserveAspectRatio="xMidYMid meet">
+        <defs>
+          <linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#ffffff" stop-opacity="0.85"/>
+            <stop offset="35%" stop-color="#d9d9d9" stop-opacity="0.35"/>
+            <stop offset="60%" stop-color="#c9a55c" stop-opacity="0.18"/>
+            <stop offset="100%" stop-color="#ffffff" stop-opacity="0.55"/>
+          </linearGradient>
+          <linearGradient id="goldRim" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#f3d99b"/>
+            <stop offset="50%" stop-color="#c9a55c"/>
+            <stop offset="100%" stop-color="#8a6d2f"/>
+          </linearGradient>
+        </defs>
+        <!-- bowl -->
+        <path d="M55 20 C55 130 70 190 110 200 C150 190 165 130 165 20 Z"
+              fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1.4"/>
+        <!-- liquid -->
+        <path d="M66 95 C72 150 86 188 110 196 C134 188 148 150 154 95 Z"
+              fill="#7d1530" opacity="0.55"/>
+        <!-- rim highlight -->
+        <path d="M55 20 C55 24 165 24 165 20" fill="none" stroke="#ffffff" stroke-width="1.6" opacity="0.9"/>
+        <!-- stem -->
+        <rect x="107" y="200" width="6" height="200" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="0.6"/>
+        <!-- base -->
+        <ellipse cx="110" cy="408" rx="58" ry="14" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1.2"/>
+        <ellipse cx="110" cy="405" rx="58" ry="14" fill="none" stroke="#ffffff" stroke-width="0.8" opacity="0.6"/>
+        <!-- shine -->
+        <path d="M78 40 C74 110 84 170 100 190" fill="none" stroke="#ffffff" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+    <a href="#collections" class="hero__scroll" aria-label="Rolar">
+      <span>Descer</span>
+      <i></i>
+    </a>
+  </section>
+
+  <!-- ===== Marquee ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Cristal sem chumbo</span><span class="dot">◆</span>
+      <span>Sopro artesanal</span><span class="dot">◆</span>
+      <span>Brilho diamante</span><span class="dot">◆</span>
+      <span>Edição limitada</span><span class="dot">◆</span>
+      <span>Acabamento dourado</span><span class="dot">◆</span>
+      <span>Cristal sem chumbo</span><span class="dot">◆</span>
+      <span>Sopro artesanal</span><span class="dot">◆</span>
+      <span>Brilho diamante</span><span class="dot">◆</span>
+      <span>Edição limitada</span><span class="dot">◆</span>
+      <span>Acabamento dourado</span><span class="dot">◆</span>
+    </div>
+  </div>
+
+  <!-- ===== Heritage ===== -->
+  <section class="heritage section" id="heritage">
+    <div class="heritage__grid">
+      <div class="heritage__visual reveal">
+        <div class="heritage__frame">
+          <svg viewBox="0 0 200 360" class="glass-svg glass-svg--slim" aria-hidden="true">
+            <defs>
+              <linearGradient id="crystal2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffffff" stop-opacity="0.8"/>
+                <stop offset="55%" stop-color="#c0c0c0" stop-opacity="0.25"/>
+                <stop offset="100%" stop-color="#ffffff" stop-opacity="0.5"/>
+              </linearGradient>
+            </defs>
+            <path d="M70 14 C70 90 78 130 100 138 C122 130 130 90 130 14 Z"
+                  fill="url(#crystal2)" stroke="url(#goldRim)" stroke-width="1.2"/>
+            <rect x="97" y="138" width="6" height="160" fill="url(#crystal2)"/>
+            <ellipse cx="100" cy="305" rx="46" ry="11" fill="url(#crystal2)" stroke="url(#goldRim)" stroke-width="1"/>
+            <path d="M82 30 C80 80 86 118 96 132" fill="none" stroke="#fff" stroke-width="2.4" opacity="0.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+      <div class="heritage__text reveal">
+        <p class="eyebrow">O Atelier</p>
+        <h2 class="h2">Onde a luz<br />encontra a forma</h2>
+        <p>
+          A <strong>Finesse Abrantes</strong> nasce do encontro entre a tradição
+          centenária da cristaleria europeia e um olhar contemporâneo de luxo.
+          Cada peça é soprada à mão, polida individualmente e inspecionada sob
+          luz para garantir o brilho perfeito.
+        </p>
+        <p>
+          Trabalhamos cristal de altíssima transparência — sem chumbo, mais
+          resistente e luminoso — para criar taças que transformam o ritual de
+          brindar em uma experiência sensorial completa.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat__num" data-count="24">0</span>
+            <span class="stat__label">etapas de polimento</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="100">0</span>
+            <span class="stat__label">% feito à mão</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="7">0</span>
+            <span class="stat__label">coleções exclusivas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Collections ===== -->
+  <section class="collections section" id="collections">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--center">As Coleções</p>
+      <h2 class="h2 h2--center">Cristal para cada<br />gesto de elegância</h2>
+      <p class="section__sub">
+        Linhas pensadas para revelar os aromas mais delicados. Selecione a taça
+        certa e descubra como o cristal molda a experiência da bebida.
+      </p>
+    </div>
+
+    <div class="cards">
+      <!-- card -->
+      <article class="card reveal">
+        <div class="card__media">
+          <span class="card__tag">Bordeaux</span>
+          <svg viewBox="0 0 160 300" class="card-glass" aria-hidden="true">
+            <path d="M48 18 C48 110 58 150 80 158 C102 150 112 110 112 18 Z" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1.1"/>
+            <path d="M56 80 C60 130 70 152 80 156 C90 152 100 130 104 80 Z" fill="#7d1530" opacity="0.5"/>
+            <rect x="77" y="158" width="6" height="100" fill="url(#crystal)"/>
+            <ellipse cx="80" cy="262" rx="40" ry="10" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Coleção Noir</h3>
+          <p class="card__desc">Cálice generoso para tintos encorpados. Haste alongada e base espelhada.</p>
+          <a href="#contact" class="card__link">Consultar →</a>
+        </div>
+      </article>
+
+      <!-- card -->
+      <article class="card reveal">
+        <div class="card__media">
+          <span class="card__tag">Champagne</span>
+          <svg viewBox="0 0 160 300" class="card-glass" aria-hidden="true">
+            <path d="M68 18 C68 120 72 165 80 170 C88 165 92 120 92 18 Z" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1.1"/>
+            <path d="M71 70 C72 140 76 165 80 168 C84 165 88 140 89 70 Z" fill="#e7c873" opacity="0.45"/>
+            <circle cx="80" cy="120" r="2" fill="#fff" opacity="0.8"/>
+            <circle cx="78" cy="95" r="1.5" fill="#fff" opacity="0.7"/>
+            <circle cx="82" cy="140" r="1.5" fill="#fff" opacity="0.7"/>
+            <rect x="77" y="170" width="6" height="88" fill="url(#crystal)"/>
+            <ellipse cx="80" cy="262" rx="38" ry="10" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Coleção Lumière</h3>
+          <p class="card__desc">Flûte estreita que preserva a perlage. Filete de ouro 24k opcional na borda.</p>
+          <a href="#contact" class="card__link">Consultar →</a>
+        </div>
+      </article>
+
+      <!-- card -->
+      <article class="card reveal">
+        <div class="card__media">
+          <span class="card__tag">Burgundy</span>
+          <svg viewBox="0 0 160 300" class="card-glass" aria-hidden="true">
+            <path d="M40 24 C40 120 56 156 80 164 C104 156 120 120 120 24 C120 60 40 60 40 24 Z" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1.1"/>
+            <path d="M52 86 C58 134 70 158 80 162 C90 158 102 134 108 86 Z" fill="#7d1530" opacity="0.45"/>
+            <rect x="77" y="164" width="6" height="94" fill="url(#crystal)"/>
+            <ellipse cx="80" cy="262" rx="42" ry="10" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Coleção Aurum</h3>
+          <p class="card__desc">Bojo amplo para tintos delicados. Máxima oxigenação e brilho diamante.</p>
+          <a href="#contact" class="card__link">Consultar →</a>
+        </div>
+      </article>
+
+      <!-- card -->
+      <article class="card reveal">
+        <div class="card__media">
+          <span class="card__tag">Whisky</span>
+          <svg viewBox="0 0 160 300" class="card-glass" aria-hidden="true">
+            <path d="M52 120 L52 250 C52 262 108 262 108 250 L108 120 Z" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1.1"/>
+            <path d="M52 200 L52 250 C52 262 108 262 108 250 L108 200 Z" fill="#b5651d" opacity="0.45"/>
+            <path d="M52 120 C52 112 108 112 108 120" fill="none" stroke="#fff" stroke-width="1.4" opacity="0.7"/>
+            <line x1="62" y1="130" x2="62" y2="252" stroke="#fff" stroke-width="0.6" opacity="0.3"/>
+            <line x1="98" y1="130" x2="98" y2="252" stroke="#fff" stroke-width="0.6" opacity="0.3"/>
+          </svg>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Coleção Onyx</h3>
+          <p class="card__desc">Copo baixo de base pesada, lapidado à mão. Para destilados de respeito.</p>
+          <a href="#contact" class="card__link">Consultar →</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===== Craft / Feature ===== -->
+  <section class="craft section" id="craft">
+    <div class="craft__bg" aria-hidden="true"></div>
+    <div class="craft__inner">
+      <div class="craft__text reveal">
+        <p class="eyebrow">Artesania</p>
+        <h2 class="h2">O segredo está<br />no detalhe invisível</h2>
+        <p>
+          Da seleção da matéria-prima ao último polimento, são horas de trabalho
+          manual em cada taça. A borda é cortada a fogo para um toque
+          imperceptível nos lábios; a haste, puxada à mão para uma simetria
+          perfeita.
+        </p>
+        <ul class="features">
+          <li class="reveal"><span class="features__icon">◆</span>
+            <div><strong>Borda cortada a laser</strong><p>Toque suave e ressonância cristalina ao brindar.</p></div>
+          </li>
+          <li class="reveal"><span class="features__icon">◆</span>
+            <div><strong>Cristal sem chumbo</strong><p>Mais leve, resistente e com transparência absoluta.</p></div>
+          </li>
+          <li class="reveal"><span class="features__icon">◆</span>
+            <div><strong>Acabamento em ouro e prata</strong><p>Detalhes metálicos aplicados à mão, sob encomenda.</p></div>
+          </li>
+        </ul>
+      </div>
+      <div class="craft__visual reveal">
+        <div class="craft__orb"></div>
+        <svg viewBox="0 0 220 480" class="glass-svg" aria-hidden="true">
+          <path d="M55 20 C55 130 70 190 110 200 C150 190 165 130 165 20 Z" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1.4"/>
+          <path d="M55 20 C55 24 165 24 165 20" fill="none" stroke="#fff" stroke-width="1.6" opacity="0.9"/>
+          <rect x="107" y="200" width="6" height="200" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="0.6"/>
+          <ellipse cx="110" cy="408" rx="58" ry="14" fill="url(#crystal)" stroke="url(#goldRim)" stroke-width="1.2"/>
+          <path d="M78 40 C74 110 84 170 100 190" fill="none" stroke="#fff" stroke-width="3" opacity="0.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Gallery ===== -->
+  <section class="gallery section" id="gallery">
+    <div class="section__head reveal">
+      <p class="eyebrow eyebrow--center">Galeria</p>
+      <h2 class="h2 h2--center">Brilho em cada ângulo</h2>
+    </div>
+    <div class="gallery__grid">
+      <div class="gallery__item gallery__item--tall reveal"><span>Noir</span></div>
+      <div class="gallery__item reveal"><span>Lumière</span></div>
+      <div class="gallery__item reveal"><span>Aurum</span></div>
+      <div class="gallery__item gallery__item--wide reveal"><span>Onyx</span></div>
+      <div class="gallery__item reveal"><span>Argent</span></div>
+    </div>
+    <p class="gallery__note reveal">
+      Veja mais no nosso Instagram
+      <a href="https://instagram.com/finesseabrantes" target="_blank" rel="noopener">@finesseabrantes</a>
+    </p>
+  </section>
+
+  <!-- ===== Contact / CTA ===== -->
+  <section class="contact section" id="contact">
+    <div class="contact__card reveal">
+      <p class="eyebrow eyebrow--center">Atendimento exclusivo</p>
+      <h2 class="h2 h2--center">Leve o cristal Finesse<br />para a sua mesa</h2>
+      <p class="contact__sub">
+        Encomendas personalizadas, gravações e coleções sob medida.
+        Fale com a nossa curadoria.
+      </p>
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__row">
+          <input type="text" name="name" placeholder="Seu nome" required />
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+        </div>
+        <textarea name="message" rows="3" placeholder="Conte o que procura..."></textarea>
+        <button type="submit" class="btn btn--gold btn--full">Enviar mensagem</button>
+        <p class="form__status" id="formStatus" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="brand__name">Finesse Abrantes</span>
+        <p>Cristal premium feito à mão. Sofisticação em cada brinde.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Navegar</h4>
+          <a href="#collections">Coleções</a>
+          <a href="#heritage">Atelier</a>
+          <a href="#craft">Artesania</a>
+          <a href="#gallery">Galeria</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contato</h4>
+          <a href="https://instagram.com/finesseabrantes" target="_blank" rel="noopener">Instagram</a>
+          <a href="#contact">Encomendas</a>
+          <a href="mailto:contato@finesseabrantes.com">E-mail</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© <span id="year"></span> Finesse Abrantes — Crystal Atelier</span>
+      <span>Feito à mão com brilho.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
